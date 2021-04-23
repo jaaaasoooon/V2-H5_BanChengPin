@@ -1,0 +1,361 @@
+﻿<Application x:Class="BoqiangH5.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+             xmlns:local="clr-namespace:BoqiangH5"
+             StartupUri="MainWindow.xaml" Startup="OnAppStartup_UpdateThemeName" Exit="Application_Exit">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Languages\StringResource.zh-CN.xaml"/>
+                <ResourceDictionary Source="Languages\StringResource.en-US.xaml"/>
+                <ResourceDictionary Source="ControlResource\ComboBox.xaml"/>
+                <!--<ResourceDictionary Source="ControlResource\CheckEdit.xaml"/>-->
+                <ResourceDictionary Source="Styles/DataGrid.xaml"/>
+                <ResourceDictionary Source="Styles\Style.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <SolidColorBrush x:Key="ProtectOnBrush" Color="Red" />
+            <SolidColorBrush x:Key="WarnOnBrush" Color="Yellow" />
+            
+            <LinearGradientBrush x:Key="NormalOnBrush">
+                <GradientStop Color="#00FF00" Offset="0"/>
+                <GradientStop Color="White" Offset="0.5"/>
+                <GradientStop Color="#00FF00" Offset="1"/>
+            </LinearGradientBrush>
+            
+            <LinearGradientBrush x:Key="AFEOnBrush">
+                <GradientStop Color="#FF0033" Offset="0"/>
+                <GradientStop Color="White" Offset="0.5"/>
+                <GradientStop Color="#FF0033" Offset="1"/>
+            </LinearGradientBrush>
+            
+            <LinearGradientBrush x:Key="BalanceOnBrush">
+                <GradientStop Color="#3399FF" Offset="0"/>
+                <GradientStop Color="White" Offset="0.5"/>
+                <GradientStop Color="#3399FF" Offset="1"/>
+            </LinearGradientBrush>
+
+            <!--OpenSwitch-->
+            <RadialGradientBrush x:Key="openSwitch" Center="0.5,0.5">
+                <!--<GradientStop Color="#FF29F008" Offset="0"/>-->
+                <GradientStop Color="White" Offset="0.2"/>
+                <GradientStop Color="#FF29F008" Offset="1"/>
+            </RadialGradientBrush>
+
+            <SolidColorBrush x:Key="OffBrush" Color="Transparent" />
+
+            <!--=================converts=====================-->
+            <local:ReverseConverter x:Key="rc"></local:ReverseConverter>
+            <local:HexToStringConverter x:Key="hsc"></local:HexToStringConverter>
+            <local:ContentToEmptyConverter x:Key="cte"/>
+            <local:ByteToIntConverter x:Key="bic"></local:ByteToIntConverter>
+            <!--<local:Providier x:Key="Providier"></local:Providier>-->
+            <!--<local:TypeToIndexConverter x:Key="ttc"></local:TypeToIndexConverter>-->
+            <!--<local:TypeToChannelConverter x:Key="tcc"></local:TypeToChannelConverter>-->
+            <local:FlagToIsEnableConverter x:Key="ftc"></local:FlagToIsEnableConverter>
+            <local:RowToFocusConverter x:Key="rtc"></local:RowToFocusConverter>
+            <local:DigitViewConverter x:Key="DigitViewConverter"/>
+            <local:TextViewConverter x:Key="TextViewConverter"/>
+            <local:ExtremumValueConverter x:Key="ExtremumValueConverter"/>
+            <local:VisibilityConverter x:Key="vbc"/>
+           
+            <local:StatusColorConverter x:Key="StatusColorConverter"
+                                        ProtectOnBrush="{StaticResource ProtectOnBrush}"
+                                        WarnOnBrush="{StaticResource WarnOnBrush}"
+                                        NormalOnBrush="{StaticResource NormalOnBrush}"
+                                        AFEOnBrush="{StaticResource AFEOnBrush}"
+                                        BalanceOnBrush="{StaticResource BalanceOnBrush}"
+                                        OffBrush="{StaticResource OffBrush}"/>
+            <local:BoolenToVisibilityConvert x:Key="BoolenToVisibilityConvert"/>
+            <local:ZLGFuction x:Key="ZLGCAN"/>
+            <!--=============================================-->
+
+
+            <!--=================Styles=====================-->
+
+                <!--==========TextBlockStyle=========-->
+            <Style TargetType="TextBlock" x:Key="style_TextBlock">
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            </Style>
+            <Style TargetType="Button" x:Key="style_SimpleButton">
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+            </Style>
+            <Style TargetType="TextBox" x:Key="style_TextBox">
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            </Style>
+
+
+                <!--===========ListBoxStyle=========-->
+            <Style x:Key="ListBoxStyle1" TargetType="ListBox">
+                <!--<Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>-->
+                <Setter Property="BorderBrush" Value="Transparent"/>
+                <Setter Property="SnapsToDevicePixels" Value="True"/>
+                <Setter Property="Padding" Value="3"/>
+            </Style>
+
+            <Style x:Key="ListBoxItemSelStyle" TargetType="ListBoxItem">
+                <Style.Resources>
+                    <!--SelectedItem with focus-->
+                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
+                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+                    <!--SelectedItem without focus-->
+                    <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="Transparent"/>
+                    <SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="Black"/>
+                </Style.Resources>
+                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+            </Style>
+
+            <Style x:Key="VerGridSplitterStyle" TargetType="GridSplitter">
+                <Setter Property="Width" Value="2"/>
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                <Setter Property="ShowsPreview" Value="False"/>
+                <Setter Property="ResizeDirection" Value="Columns"/>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+
+            <Style x:Key="HorGridSplitterStyle" TargetType="GridSplitter">
+                <Setter Property="Height" Value="2"/>
+                <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+                <Setter Property="ShowsPreview" Value="False"/>
+                <Setter Property="ResizeDirection" Value="Rows"/>
+                <Setter Property="Background" Value="Transparent"/>
+            </Style>
+
+                <!--===========BorderStyle=========-->
+            <Style x:Key="MainBorderStyle" TargetType="Border">
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="BorderBrush" Value="#FFADB9CD"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="Margin" Value="3"/>
+                <Setter Property="SnapsToDevicePixels" Value="True"/>
+            </Style>    
+
+            <!--===========================================-->
+
+            <!--otherListBoxDataTemplate-->
+            <DataTemplate x:Key="otherListBoxDataTemplate">
+                <Grid>
+                    <Border Margin="5,2" BorderThickness="1" BorderBrush="Gray" MinWidth="150" MinHeight="36">
+                        <Grid>
+                            <Grid.ColumnDefinitions>                        
+                                <ColumnDefinition Width="80*"></ColumnDefinition>
+                                <ColumnDefinition Width="100*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Margin="10,5" Text="{Binding Path=VarName}" HorizontalAlignment="Right" FontSize="16"/>
+                            <TextBlock Grid.Column="1" Margin="15,5" HorizontalAlignment="Left" FontSize="16">
+                                <TextBlock.Text>
+                                    <MultiBinding Converter="{StaticResource DigitViewConverter}">
+                                        <Binding Path="VarValue"/>
+                                        <Binding Path="VarScale"/>
+                                        <Binding Path="VarUnit"/>
+                                    </MultiBinding>
+                                </TextBlock.Text>
+                            </TextBlock>                            
+                        </Grid>
+                    </Border>
+                </Grid>
+            </DataTemplate>
+
+            <!--CompactWarnListBoxDataTemplate-->
+            <DataTemplate x:Key="CompactWarnListBoxDataTemplate">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Resources>
+                        <Style TargetType="Ellipse">
+                            <!--<Setter Property="ToolTip" Value="当前状态：OFF"/>-->
+                            <Setter Property="Opacity"  Value="0.3"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=StateValue}" Value="True">
+                                    <DataTrigger.EnterActions>
+                                        <!--闪烁动画-->
+                                        <BeginStoryboard>
+                                            <Storyboard RepeatBehavior="Forever" >
+                                                <DoubleAnimation BeginTime="0" Storyboard.TargetProperty="(UIElement.Opacity)" From="1" To="0" Duration="00:00:02" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </DataTrigger.EnterActions>
+                                    <!--<Setter Property="ToolTip" Value="当前状态：ON"/>-->
+                                    <Setter Property="Opacity"  Value="1.0"/>
+                                    <Setter Property="Fill"  
+                                        Value="{Binding Path=VarPromptStatus, Converter={StaticResource StatusColorConverter}}"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Opacity" Value="0.3"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=StateValue}" Value="True">
+                                    <Setter Property="Opacity" Value="1.0"/>
+                                    <Setter Property="Background" Value="{Binding Path=VarPromptStatus,Converter={StaticResource StatusColorConverter}}"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+
+                    </Grid.Resources>
+                    <Ellipse  Grid.Column="0" Margin="8,8,0,8" Width="14" Height="14" Stroke="#FF908C8C"/>
+                    <TextBlock Grid.Column="1" Margin="3,8,5,8" Text="{Binding Path=StateName}" Foreground="Black" />
+                    <!--<Border Margin="5" BorderThickness="1" BorderBrush="LightGray" >
+                        <TextBlock Padding="3" Foreground="Black"
+                               Text="{Binding Path=StateName}" />
+                    </Border>-->
+                    <!--<TextBlock Grid.Column="1" Margin="3,8,5,8" Text="{Binding Path=StateName}" Foreground="Black" />-->
+                </Grid>
+            </DataTemplate>
+
+            <!--normalStateListBoxDataTemplate-->
+            <DataTemplate x:Key="normalStateListBoxDataTemplate">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Resources>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="ToolTip" Value="当前状态：OFF"/>
+                            <Setter Property="Opacity"  Value="0.3"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=StateValue}" Value="True">
+                                    <Setter Property="ToolTip" Value="当前状态：ON"/>
+                                    <Setter Property="Opacity"  Value="1.0"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                        <Style TargetType="Ellipse">
+                            <Setter Property="Opacity"  Value="1"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Path=StateValue}" Value="True">
+                                    <!--<Setter Property="Fill"  
+                                        Value="{Binding Path=VarPromptStatus, Converter={StaticResource StatusColorConverter}}"/>-->
+                                    <Setter Property="Fill"  Value="{StaticResource openSwitch}"/>
+                                    <Setter Property="Opacity"  Value="1.0"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Resources>
+                    <Ellipse  Grid.Column="0" Margin="8,8,0,8" Width="14" Height="14" Stroke="#FF908C8C" />
+                    <TextBlock Grid.Column="1" Margin="3,8,5,8" Text="{Binding Path=StateName}" Foreground="Black" />
+                </Grid>
+            </DataTemplate>
+            
+            <!--relayStateListBoxDataTemplate-->
+            <DataTemplate x:Key="relayStateListBoxDataTemplate">
+                <Border Style="{StaticResource MainBorderStyle}">
+                    <Grid MinWidth="80" MinHeight="80" MaxWidth="120" MaxHeight="120">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.Resources>
+                            <Style TargetType="CheckBox">
+                                <Setter Property="Opacity" Value="0.3" />
+                                <Setter Property="Margin" Value="5"/>
+                                <Setter Property="Background" Value="Orange"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate>
+                                            <Viewbox>
+                                                <Path Stroke="Orange" StrokeThickness="1" 
+                                                      Data="M 10,10 H 20 A2,2 0,0,1 26,10 A2,2,0,1,1 20,10 M23,7 L48,2 
+                                                      M45,10 A2,2 0,0,1 51,10 A2,2,0,1,1 45,10 M51,10 H61"/>
+                                            </Viewbox>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding StateValue}" Value="True">
+                                        <Setter Property="Opacity" Value="1" />
+                                        <Setter Property="Background" Value="LightGreen"/>
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate>
+                                                    <Viewbox>
+                                                        <Path Stroke="LightGreen" StrokeThickness="1" 
+                                                      Data="M 10,10 H 20 A2,2 0,0,1 26,10 A2,2,0,1,1 20,10 M23,7 L48,7 
+                                                      M45,10 A2,2 0,0,1 51,10 A2,2,0,1,1 45,10 M51,10 H61"/>
+                                                    </Viewbox>
+                                                </ControlTemplate>
+                                                <!--<ControlTemplate>
+                                                    <Path Stroke="Black" StrokeThickness="1" Data="M 5,5 H 10 A 20,20 0 1 1 10,5"/>
+                                                </ControlTemplate>-->
+                                            </Setter.Value>
+                                        </Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                            
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Center"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                                <Setter Property="Opacity" Value="0.3"/>
+                                <Setter Property="Text" Value="Off"/>
+                                <Setter Property="Margin" Value="5"/>
+                                <Setter Property="Background" Value="OrangeRed"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding StateValue}" Value="True">
+                                        <Setter Property="Opacity" Value="1"/>
+                                        <Setter Property="Text" Value="On"/>
+                                        <Setter Property="Background" Value="LightGreen"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Grid.Resources>
+                        <CheckBox Grid.Row="0" Grid.Column="0"/>
+                        <TextBlock Grid.Row="0" Grid.Column="1"/>
+                        <Border Grid.Row="1"  Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource MainBorderStyle}" Background="LightBlue">
+                            <TextBlock  Style="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                        Text="{Binding StateName}"/>
+                        </Border>
+                    </Grid>
+                </Border>
+            </DataTemplate>
+            
+            <!--PackOnlineStateListBox-->
+            <!--<DataTemplate x:Key="PackOnlineStateListBox">
+                <Grid>
+                    <Grid.Resources>
+                        <Style TargetType="dxb:BarStaticItem">
+                            <Setter Property="Glyph" Value="{dx:DXImageGrayscale Image=Apply_16x16.png}"/>
+                            <Setter Property="Content" Value="{Binding PackName}"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding IsOnline}" Value="True">
+                                    <Setter Property="Glyph" Value="{dx:DXImage Image=Apply_16x16.png}"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Grid.Resources>
+                </Grid>
+            </DataTemplate>-->
+
+           
+
+            <!--DataGrid 列标题居中 添加命名空间：Primitives-->
+            <!--<Style x:Key="DataGridHeaderStyle" TargetType="DataGridColumnHeader">
+                <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+            </Style>
+            
+            <Style x:Key="DataGridTextCenter" TargetType="{x:Type TextBlock}">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </Style>-->
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

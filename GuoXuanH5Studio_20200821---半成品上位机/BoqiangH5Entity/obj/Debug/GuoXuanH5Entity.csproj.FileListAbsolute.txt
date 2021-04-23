@@ -1,0 +1,5 @@
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Entity\bin\Debug\UDSEntity.dll
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Entity\bin\Debug\UDSEntity.pdb
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Entity\obj\Debug\UDSEntity.dll
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Entity\obj\Debug\UDSEntity.pdb
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Entity\obj\Debug\GuoXuanH5Entity.csprojResolveAssemblyReference.cache

@@ -1,0 +1,770 @@
+﻿<UserControl x:Class="BoqiangH5.UserCtrlEEPROM"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+    <UserControl.Resources>
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Background="#FFE5E5E5" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox Header="系统配置" Margin="0" >
+                <Grid Margin="2" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                    </Grid.RowDefinitions>
+                    <Grid  Margin="0" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="预充控制：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbEnpch" Grid.Column="1" Style="{StaticResource ComboxStyle}" >
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="充电MOS恢复控制：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbEnmos" Grid.Column="1" Style="{StaticResource ComboxStyle}" >
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="过流MOS控制：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOcpm" Grid.Column="1" Style="{StaticResource ComboxStyle}" >
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="平衡功能：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbBal" Grid.Column="1" Style="{StaticResource ComboxStyle}" >
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="二次过充保护使能：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbDIS_PF" Grid.Column="1" Style="{StaticResource ComboxStyle}" >
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="禁止低压充电：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbE0VB" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="负载释放延迟：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbLDRT" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "100ms"/>
+                            <ComboBoxItem Content= "500ms"/>
+                            <ComboBoxItem Content= "1000ms"/>
+                            <ComboBoxItem Content= "2000ms"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="CTL管脚控制：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbCTL" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "Invalid"/>
+                            <ComboBoxItem Content= "Chg-MOS"/>
+                            <ComboBoxItem Content= "Dsg-MOS"/>
+                            <ComboBoxItem Content= "Chg/Dsg-MOS"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="过流保护定时恢复：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCRA" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="9">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="负载锁定：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbEUVR" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="欠压关闭CHG：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbUV_OP" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "Off"/>
+                            <ComboBoxItem Content= "On"/>
+                        </ComboBox>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="电压保护" Margin="0" Grid.Column="1">
+                <Grid Margin="2" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                    </Grid.RowDefinitions>
+                    <Grid  Margin="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="二次过充保护电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbPFV_B" Grid.Column="1" Text="4400"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="二次过充保护延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbPFT_10_10" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "8"/>
+                            <ComboBoxItem Content= "16"/>
+                            <ComboBoxItem Content= "32"/>
+                            <ComboBoxItem Content= "64"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="s" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="过压保护电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbOV_23" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="过压保护延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOVT_2_74" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="1">                     
+                            <ComboBoxItem Content= "100ms"/>
+                            <ComboBoxItem Content= "200ms"/>
+                            <ComboBoxItem Content= "300ms"/>
+                            <ComboBoxItem Content= "400ms"/>
+                            <ComboBoxItem Content= "600ms"/>
+                            <ComboBoxItem Content= "800ms"/>
+                            <ComboBoxItem Content= "1s"/>
+                            <ComboBoxItem Content= "2s"/>
+                            <ComboBoxItem Content= "3s"/>
+                            <ComboBoxItem Content= "4s"/>
+                            <ComboBoxItem Content= "6s"/>
+                            <ComboBoxItem Content= "8s"/>
+                            <ComboBoxItem Content= "10s"/>                     
+                            <ComboBoxItem Content= "20s"/>
+                            <ComboBoxItem Content= "30s"/>
+                            <ComboBoxItem Content= "40s"/>
+                        </ComboBox>
+                        
+                    </Grid>
+
+                    <Grid  Margin="0" Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="过压保护释放电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbOVR_45" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="平衡开启电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbBALV_8" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="欠压保护电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbUV_6" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="欠压保护延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbUVT_4_74" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="1">
+                            <ComboBoxItem Content= "100ms"/>
+                            <ComboBoxItem Content= "200ms"/>
+                            <ComboBoxItem Content= "300ms"/>
+                            <ComboBoxItem Content= "400ms"/>
+                            <ComboBoxItem Content= "600ms"/>
+                            <ComboBoxItem Content= "800ms"/>
+                            <ComboBoxItem Content= "1s"/>
+                            <ComboBoxItem Content= "2s"/>
+                            <ComboBoxItem Content= "3s"/>
+                            <ComboBoxItem Content= "4s"/>
+                            <ComboBoxItem Content= "6s"/>
+                            <ComboBoxItem Content= "8s"/>
+                            <ComboBoxItem Content= "10s"/>
+                            <ComboBoxItem Content= "20s"/>
+                            <ComboBoxItem Content= "30s"/>
+                            <ComboBoxItem Content= "40s"/>
+                        </ComboBox>
+                        <!--<Label  Grid.Column="2"  Content="s" Style="{StaticResource LabUnitStyle}"/>-->
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="欠压保护释放电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbUVR_7" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+
+                    <Grid  Margin="0" Grid.Row="9">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="预充开启电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbPREV_9" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="低压禁充电压：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbL0V_A" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+
+                    <Grid  Margin="0" Grid.Row="11">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="充放电状态检测电压：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbCHS76" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            <ComboBoxItem Content= "200"/>
+                            <ComboBoxItem Content= "500"/>
+                            <ComboBoxItem Content= "1000"/>
+                            <ComboBoxItem Content= "2000"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="uV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="电流保护" Margin="2" Grid.Column="2">
+                <Grid Margin="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+     
+                    </Grid.RowDefinitions>
+                    <Grid  Margin="0" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="放电电流1保护电压：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCD1V_C_74" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="8">
+                            <ComboBoxItem Content= "20"/>
+                            <ComboBoxItem Content= "30"/>
+                            <ComboBoxItem Content= "40"/>
+                            <ComboBoxItem Content= "50"/>
+                            <ComboBoxItem Content= "60"/>
+                            <ComboBoxItem Content= "70"/>
+                            <ComboBoxItem Content= "80"/>
+                            <ComboBoxItem Content= "90"/>
+                            <ComboBoxItem Content= "100"/>
+                            <ComboBoxItem Content= "110"/>
+                            <ComboBoxItem Content= "120"/>
+                            <ComboBoxItem Content= "130"/>
+                            <ComboBoxItem Content= "140"/>
+                            <ComboBoxItem Content= "160"/>
+                            <ComboBoxItem Content= "180"/>
+                            <ComboBoxItem Content= "200"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="放电电流1保护延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCD1T_C_30" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="13">
+                            <ComboBoxItem Content= "50ms"/>
+                            <ComboBoxItem Content= "100ms"/>
+                            <ComboBoxItem Content= "200ms"/>
+                            <ComboBoxItem Content= "400ms"/>
+                            <ComboBoxItem Content= "600ms"/>
+                            <ComboBoxItem Content= "800ms"/>
+                            <ComboBoxItem Content= "1s"/>
+                            <ComboBoxItem Content= "2s"/>
+                            <ComboBoxItem Content= "4s"/>
+                            <ComboBoxItem Content= "6s"/>
+                            <ComboBoxItem Content= "8s"/>
+                            <ComboBoxItem Content= "10s"/>
+                            <ComboBoxItem Content= "15s"/>
+                            <ComboBoxItem Content= "20s"/>
+                            <ComboBoxItem Content= "30s"/>
+                            <ComboBoxItem Content= "40s"/>
+                        </ComboBox>
+                       
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="放电电流2保护电压：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCD2V_D_74" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="11">
+                            <ComboBoxItem Content= "30"/>
+                            <ComboBoxItem Content= "40"/>
+                            <ComboBoxItem Content= "50"/>
+                            <ComboBoxItem Content= "60"/>
+                            <ComboBoxItem Content= "70"/>
+                            <ComboBoxItem Content= "80"/>
+                            <ComboBoxItem Content= "90"/>
+                            <ComboBoxItem Content= "100"/>
+                            <ComboBoxItem Content= "120"/>
+                            <ComboBoxItem Content= "140"/>
+                            <ComboBoxItem Content= "160"/>
+                            <ComboBoxItem Content= "180"/>
+                            <ComboBoxItem Content= "200"/>
+                            <ComboBoxItem Content= "300"/>
+                            <ComboBoxItem Content= "400"/>
+                            <ComboBoxItem Content= "500"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="放电电流2保护延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCD2T_D_30" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="11">
+                            <ComboBoxItem Content= "10ms"/>
+                            <ComboBoxItem Content= "20ms"/>
+                            <ComboBoxItem Content= "40ms"/>
+                            <ComboBoxItem Content= "60ms"/>
+                            <ComboBoxItem Content= "80ms"/>
+                            <ComboBoxItem Content= "100ms"/>
+                            <ComboBoxItem Content= "200ms"/>
+                            <ComboBoxItem Content= "400ms"/>
+                            <ComboBoxItem Content= "600ms"/>
+                            <ComboBoxItem Content= "800ms"/>
+                            <ComboBoxItem Content= "1s"/>
+                            <ComboBoxItem Content= "2s"/>
+                            <ComboBoxItem Content= "4s"/>
+                            <ComboBoxItem Content= "8s"/>
+                            <ComboBoxItem Content= "10s"/>
+                            <ComboBoxItem Content= "20s"/>
+                        </ComboBox>
+                        
+                    </Grid>
+
+                    <Grid  Margin="0" Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="短路保护电压：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbSCV74" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="11">
+                            <ComboBoxItem Content= "50"/>
+                            <ComboBoxItem Content= "80"/>
+                            <ComboBoxItem Content= "110"/>
+                            <ComboBoxItem Content= "140"/>
+                            <ComboBoxItem Content= "170"/>
+                            <ComboBoxItem Content= "200"/>
+                            <ComboBoxItem Content= "230"/>
+                            <ComboBoxItem Content= "260"/>
+                            <ComboBoxItem Content= "290"/>
+                            <ComboBoxItem Content= "320"/>
+                            <ComboBoxItem Content= "350"/>
+                            <ComboBoxItem Content= "400"/>
+                            <ComboBoxItem Content= "500"/>
+                            <ComboBoxItem Content= "600"/>
+                            <ComboBoxItem Content= "800"/>
+                            <ComboBoxItem Content= "1000"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="短路保护延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbSCT30" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="8">
+                            <ComboBoxItem Content= "0"/>
+                            <ComboBoxItem Content= "64"/>
+                            <ComboBoxItem Content= "128"/>
+                            <ComboBoxItem Content= "192"/>
+                            <ComboBoxItem Content= "256"/>
+                            <ComboBoxItem Content= "320"/>
+                            <ComboBoxItem Content= "384"/>
+                            <ComboBoxItem Content= "448"/>
+                            <ComboBoxItem Content= "512"/>
+                            <ComboBoxItem Content= "576"/>
+                            <ComboBoxItem Content= "640"/>
+                            <ComboBoxItem Content= "704"/>
+                            <ComboBoxItem Content= "768"/>
+                            <ComboBoxItem Content= "832"/>
+                            <ComboBoxItem Content= "896"/>
+                            <ComboBoxItem Content= "960"/>                         
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="uS" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+
+                    <Grid  Margin="0" Grid.Row="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="充电过流保护电压：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCCV74" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="8">
+                            <ComboBoxItem Content= "20"/>
+                            <ComboBoxItem Content= "30"/>
+                            <ComboBoxItem Content= "40"/>
+                            <ComboBoxItem Content= "50"/>
+                            <ComboBoxItem Content= "60"/>
+                            <ComboBoxItem Content= "70"/>
+                            <ComboBoxItem Content= "80"/>
+                            <ComboBoxItem Content= "90"/>
+                            <ComboBoxItem Content= "100"/>
+                            <ComboBoxItem Content= "110"/>
+                            <ComboBoxItem Content= "120"/>
+                            <ComboBoxItem Content= "130"/>
+                            <ComboBoxItem Content= "140"/>
+                            <ComboBoxItem Content= "160"/>
+                            <ComboBoxItem Content= "180"/>
+                            <ComboBoxItem Content= "200"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="7">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="充电过流保护延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCCT30" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="6">
+                            <ComboBoxItem Content= "10ms"/>
+                            <ComboBoxItem Content= "20ms"/>
+                            <ComboBoxItem Content= "40ms"/>
+                            <ComboBoxItem Content= "60ms"/>
+                            <ComboBoxItem Content= "80ms"/>
+                            <ComboBoxItem Content= "100ms"/>
+                            <ComboBoxItem Content= "200ms"/>
+                            <ComboBoxItem Content= "400ms"/>
+                            <ComboBoxItem Content= "600ms"/>
+                            <ComboBoxItem Content= "800ms"/>
+                            <ComboBoxItem Content= "1s"/>
+                            <ComboBoxItem Content= "2s"/>
+                            <ComboBoxItem Content= "4s"/>
+                            <ComboBoxItem Content= "8s"/>
+                            <ComboBoxItem Content= "10s"/>
+                            <ComboBoxItem Content= "20s"/>
+                        </ComboBox>
+                        <!--<Label  Grid.Column="2"  Content="mS" Style="{StaticResource LabUnitStyle}"/>-->
+                    </Grid>
+
+                    <Grid  Margin="0" Grid.Row="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="充电MOS开启延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbMOST54" Grid.Column="1" Style="{StaticResource ComboxStyle}" SelectedIndex="1">
+                            <ComboBoxItem Content= "64"/>
+                            <ComboBoxItem Content= "128"/>
+                            <ComboBoxItem Content= "256"/>
+                            <ComboBoxItem Content= "512"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="us" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="9">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100*"/>
+                            <ColumnDefinition Width="60*"/>
+                            <ColumnDefinition Width="30*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="过流自恢复延时：" Style="{StaticResource LabelStyle}"/>
+                        <ComboBox Name="cbOCRT32" Grid.Column="1" Style="{StaticResource ComboxStyle}" >
+                            <ComboBoxItem Content= "8"/>
+                            <ComboBoxItem Content= "16"/>
+                            <ComboBoxItem Content= "32"/>
+                            <ComboBoxItem Content= "64"/>
+                        </ComboBox>
+                        <Label  Grid.Column="2"  Content="s" Style="{StaticResource LabUnitStyle}"/>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+
+            <Grid Margin="0"  Grid.Column="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="240*"/>
+                    <RowDefinition Height="60*"/>
+                </Grid.RowDefinitions>
+                <GroupBox Header="温度保护" Margin="2"  Grid.Column="3">
+                    <Grid Margin="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid  Margin="0" Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="充电高温保护：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbOTC_11" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+                        <Grid  Margin="1" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="充电高温保护释放：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbOTCR_12" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+                        <Grid  Margin="0" Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="充电低温保护：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbUTC_13" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+                        <Grid  Margin="1" Grid.Row="3">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="充电低温保护释放：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbUTCR_14" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+
+                        <Grid  Margin="0" Grid.Row="4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="放电高温保护：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbOTD_15" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+                        <Grid  Margin="1" Grid.Row="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="放电高温保护释放：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbOTDR_16" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+                        <Grid  Margin="0" Grid.Row="6">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="放电低温保护：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbUTD_17" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+                        <Grid  Margin="1" Grid.Row="7">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="放电低温保护释放：" Style="{StaticResource LabelStyle}"/>
+                            <TextBox Name="tbUTDR_18" Grid.Column="1" Style="{StaticResource TextBoxStyle}"/>
+                            <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        </Grid>
+
+
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="产品信息" Margin="2"  Grid.Row="8">
+                    <Grid Margin="0" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30*"/>
+                            <RowDefinition Height="30*"/>
+                        </Grid.RowDefinitions>
+                        <Grid  Margin="1" Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="芯片功能：" Style="{StaticResource LabelStyle}"/>
+                            <ComboBox Name="cbChipFun"  Grid.Column="1" Style="{StaticResource ComboxStyle}" >
+                                <ComboBoxItem Content= "ProtectIC"/>
+                                <ComboBoxItem Content= "AFE AFD"/>
+                            </ComboBox>
+                        </Grid>
+
+                        <Grid  Margin="1" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100*"/>
+                                <ColumnDefinition Width="60*"/>
+                                <ColumnDefinition Width="30*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="电池节数：" Style="{StaticResource LabelStyle}"/>
+                            <ComboBox Name="cbCN30" Grid.Column="1" Style="{StaticResource ComboxStyle}">
+                            </ComboBox>
+                        </Grid>
+
+                    </Grid>
+                </GroupBox>
+            </Grid>
+
+
+        </Grid>
+        <Grid Margin="0" Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="120*"/>           
+            </Grid.ColumnDefinitions>
+            <Button Name="btnLoadPara" Content="加载参数"  Style="{StaticResource ButtonStyle}" Click="btnLoadPara_Click"/>
+            <Button Name="btnSavePara" Content="保存参数"  Style="{StaticResource ButtonStyle}" Grid.Column="1" Click="btnSavePara_Click"/>
+            <Button Name="btnReadPara" Content="读取参数"  Style="{StaticResource ButtonStyle}" Grid.Column="2" Click="btnReadPara_Click"/>
+            <Button Name="btnWritePara" Content="写入参数"  Style="{StaticResource ButtonStyle}" Grid.Column="3" Click="btnWritePara_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

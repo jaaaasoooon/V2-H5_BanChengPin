@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="BoqiangH5.UcButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BoqiangH5"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200">
+    <Viewbox StretchDirection="Both">
+        <Canvas Width="200" Height="200" Background="Transparent">
+            <Path Stroke="Silver" StrokeThickness="3" Fill="Cyan">
+                <Path.Data>
+                    <EllipseGeometry Center="100,100" RadiusX="50" RadiusY="50" />
+                </Path.Data>
+            </Path>
+            <Path Stroke="Silver" StrokeThickness="3" Fill="Cyan">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="30,30" IsClosed="True">
+                            <LineSegment Point="60,60"></LineSegment>
+                            <ArcSegment Point="140,60" Size="60,60" SweepDirection="Clockwise"></ArcSegment>
+                            <LineSegment Point="170,30"></LineSegment>
+                            <ArcSegment Point="30,30" Size="100,100" SweepDirection="Counterclockwise"></ArcSegment>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="Silver" StrokeThickness="3" Fill="Cyan">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="170,30" IsClosed="True">
+                            <LineSegment Point="140,60"></LineSegment>
+                            <ArcSegment Point="140,140" Size="60,60" SweepDirection="Clockwise"></ArcSegment>
+                            <LineSegment Point="170,170"></LineSegment>
+                            <ArcSegment Point="170,30" Size="100,100" SweepDirection="Counterclockwise"></ArcSegment>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="Silver" StrokeThickness="3" Fill="Cyan">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="170,170" IsClosed="True">
+                            <LineSegment Point="140,140"></LineSegment>
+                            <ArcSegment Point="60,140" Size="60,60" SweepDirection="Clockwise"></ArcSegment>
+                            <LineSegment Point="30,170"></LineSegment>
+                            <ArcSegment Point="170,170" Size="100,100" SweepDirection="Counterclockwise"></ArcSegment>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="Silver" StrokeThickness="3" Fill="Cyan">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="30,170" IsClosed="True">
+                            <LineSegment Point="60,140"></LineSegment>
+                            <ArcSegment Point="60,60" Size="60,60" SweepDirection="Clockwise"></ArcSegment>
+                            <LineSegment Point="30,30"></LineSegment>
+                            <ArcSegment Point="30,170" Size="100,100" SweepDirection="Counterclockwise"></ArcSegment>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+        </Canvas>
+    </Viewbox>
+</UserControl>

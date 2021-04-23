@@ -1,0 +1,5 @@
+E:\UDS\UDS Studio_20180808\UDSEntity\bin\Release\UDSEntity.dll
+E:\UDS\UDS Studio_20180808\UDSEntity\bin\Release\UDSEntity.pdb
+E:\UDS\UDS Studio_20180808\UDSEntity\bin\Release\NLog.dll
+E:\UDS\UDS Studio_20180808\UDSEntity\obj\Release\UDSEntity.dll
+E:\UDS\UDS Studio_20180808\UDSEntity\obj\Release\UDSEntity.pdb

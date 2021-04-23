@@ -1,0 +1,281 @@
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\UDS Studio.exe
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\UDS Studio.exe.config
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\UDS Studio.pdb
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Data.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Images.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Mvvm.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Utils.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Charts.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.Core.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.LayoutControl.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Themes.Office2016White.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Data.v15.2.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Mvvm.v15.2.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Utils.v15.2.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Charts.v15.2.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.Core.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.LayoutControl.v15.2.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Xpf.Charts.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Xpf.Charts.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Xpf.Charts.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Xpf.Charts.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ControlResource\CheckEdit.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ControlResource\ComboBox.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\Languages\StringResource.en-US.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\Languages\StringResource.zh-CN.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\OperationPromptWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\SelectCAN.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\AdjustWindows.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\CANFrameRecord.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DebugWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DTCInformationWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\MainWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\NetworkManageWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\OperationPromptWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\PackViewWindows.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ParaManageWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\RealTimeRecordWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\SelectCAN.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\App.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio_MarkupCompile.cache
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio_MarkupCompile.lref
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\App.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\AdjustWindows.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\CANFrameRecord.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DebugWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DTCInformationWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\MainWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\NetworkManageWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\PackViewWindows.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ParaManageWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\RealTimeRecordWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.g.resources
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS_Studio.Properties.Resources.resources
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.csproj.GenerateResource.Cache
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.exe
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.pdb
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UpdataWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UpdataWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\WriteAdjustValueWindow.g.cs
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\WriteAdjustValueWindow.baml
+D:\项目\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.csprojResolveAssemblyReference.cache
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\UDS Studio.exe.config
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.exe
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.pdb
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\UDS Studio.exe
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\UDS Studio.pdb
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Data.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Images.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Mvvm.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Utils.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Charts.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.Core.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.LayoutControl.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Themes.Office2016White.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Data.v15.2.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Mvvm.v15.2.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Utils.v15.2.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Charts.v15.2.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.Core.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.Xpf.LayoutControl.v15.2.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ControlResource\CheckEdit.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ControlResource\ComboBox.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\Languages\StringResource.en-US.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\Languages\StringResource.zh-CN.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\OperationPromptWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\SelectCAN.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UpdataWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\AdjustWindows.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\CANFrameRecord.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DebugWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DTCInformationWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\MainWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\NetworkManageWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\OperationPromptWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\PackViewWindows.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ParaManageWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\RealTimeRecordWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\SelectCAN.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UpdataWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\WriteAdjustValueWindow.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\App.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio_MarkupCompile.cache
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio_MarkupCompile.lref
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\App.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\AdjustWindows.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\CANFrameRecord.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DebugWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\DTCInformationWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\MainWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\NetworkManageWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\PackViewWindows.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\ParaManageWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\RealTimeRecordWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\WriteAdjustValueWindow.baml
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.g.resources
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS_Studio.Properties.Resources.resources
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.csproj.GenerateResource.Cache
+F:\UDS\UDS项目\程序源码\UDS Studio\UDS Studio\obj\Debug\UDS Studio.csprojResolveAssemblyReference.cache
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\UDS Studio.exe.config
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS Studio.exe
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS Studio.pdb
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\UDS Studio.exe
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\UDS Studio.pdb
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Data.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Images.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Mvvm.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Printing.v15.2.Core.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Utils.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.Charts.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.Core.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.LayoutControl.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.Themes.Office2016White.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.XtraEditors.v15.2.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Data.v15.2.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Mvvm.v15.2.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Utils.v15.2.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.Charts.v15.2.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Printing.v15.2.Core.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.Grid.v15.2.Core.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.Xpf.LayoutControl.v15.2.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\DevExpress.XtraEditors.v15.2.xml
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\de\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\es\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ja\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ru\DevExpress.Data.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\de\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\es\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ja\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ru\DevExpress.Utils.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\de\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\es\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ja\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ru\DevExpress.Xpf.Charts.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\de\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\es\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ja\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ru\DevExpress.Printing.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\de\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\es\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ja\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ru\DevExpress.Xpf.Grid.v15.2.Core.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\de\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\es\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ja\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ru\DevExpress.Xpf.LayoutControl.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\de\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\es\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ja\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\ru\DevExpress.XtraEditors.v15.2.resources.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\ControlResource\CheckEdit.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\ControlResource\ComboBox.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\Languages\StringResource.en-US.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\Languages\StringResource.zh-CN.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\OperationPromptWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\SelectCAN.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UpdataWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\AdjustWindows.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\CANFrameRecord.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\DebugWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\DTCInformationWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\MainWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\NetworkManageWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\OperationPromptWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\PackViewWindows.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\ParaManageWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\RealTimeRecordWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\SelectCAN.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UpdataWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\WriteAdjustValueWindow.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\App.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS Studio_MarkupCompile.cache
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS Studio_MarkupCompile.lref
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\App.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\AdjustWindows.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\CANFrameRecord.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\DebugWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\DTCInformationWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\MainWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\NetworkManageWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\PackViewWindows.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\ParaManageWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\RealTimeRecordWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\WriteAdjustValueWindow.baml
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS Studio.g.resources
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS_Studio.Properties.Resources.resources
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS Studio.csproj.GenerateResource.Cache
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\UDS Studio.csprojResolveAssemblyReference.cache
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\UDSEntity.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\UDSEntity.pdb
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\UDSRepository.dll
+F:\UDS\UDS Studio_20180808\UDS Studio\bin\Debug\UDSRepository.pdb
+F:\UDS\UDS Studio_20180808\UDS Studio\obj\Debug\Styles\DataGrid.baml

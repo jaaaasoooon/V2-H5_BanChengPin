@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoqiangH5", "BoqiangH5\BoqiangH5.csproj", "{60B92753-E4C6-42FC-9D38-FDFBF9CAC7B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoqiangH5Entity", "BoqiangH5Entity\BoqiangH5Entity.csproj", "{310720BE-407E-4B6E-8F2B-4D2413B6B47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoqiangH5Repository", "BoqiangH5Repository\BoqiangH5Repository.csproj", "{74B9F7E7-AF95-40DD-BCD1-7038E8733FF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60B92753-E4C6-42FC-9D38-FDFBF9CAC7B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60B92753-E4C6-42FC-9D38-FDFBF9CAC7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60B92753-E4C6-42FC-9D38-FDFBF9CAC7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60B92753-E4C6-42FC-9D38-FDFBF9CAC7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310720BE-407E-4B6E-8F2B-4D2413B6B47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310720BE-407E-4B6E-8F2B-4D2413B6B47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310720BE-407E-4B6E-8F2B-4D2413B6B47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310720BE-407E-4B6E-8F2B-4D2413B6B47E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74B9F7E7-AF95-40DD-BCD1-7038E8733FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74B9F7E7-AF95-40DD-BCD1-7038E8733FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74B9F7E7-AF95-40DD-BCD1-7038E8733FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74B9F7E7-AF95-40DD-BCD1-7038E8733FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+F:\UDS\UDS Studio_20180808\UDSRepository\bin\Debug\UDSRepository.dll
+F:\UDS\UDS Studio_20180808\UDSRepository\bin\Debug\UDSRepository.pdb
+F:\UDS\UDS Studio_20180808\UDSRepository\obj\Debug\UDSRepository.dll
+F:\UDS\UDS Studio_20180808\UDSRepository\obj\Debug\UDSRepository.pdb
+F:\UDS\UDS Studio_20180808\UDSRepository\obj\Debug\UDSRepository.csprojResolveAssemblyReference.cache
+E:\UDS\UDS Studio_20180808\UDSRepository\bin\Debug\UDSRepository.dll
+E:\UDS\UDS Studio_20180808\UDSRepository\bin\Debug\UDSRepository.pdb
+E:\UDS\UDS Studio_20180808\UDSRepository\obj\Debug\UDSRepository.dll
+E:\UDS\UDS Studio_20180808\UDSRepository\obj\Debug\UDSRepository.pdb
+E:\UDS\UDS Studio_20180808\UDSRepository\obj\Debug\UDSRepository.csprojResolveAssemblyReference.cache
+E:\UDS\UDS Studio_20180808\UDSRepository\bin\Debug\UDSEntity.dll
+E:\UDS\UDS Studio_20180808\UDSRepository\bin\Debug\NLog.dll
+E:\UDS\UDS Studio_20180808\UDSRepository\bin\Debug\UDSEntity.pdb

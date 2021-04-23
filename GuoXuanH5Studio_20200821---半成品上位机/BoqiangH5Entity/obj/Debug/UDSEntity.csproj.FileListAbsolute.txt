@@ -1,0 +1,11 @@
+F:\UDS\UDS Studio_20180808\UDSEntity\bin\Debug\UDSEntity.dll
+F:\UDS\UDS Studio_20180808\UDSEntity\bin\Debug\UDSEntity.pdb
+F:\UDS\UDS Studio_20180808\UDSEntity\obj\Debug\UDSEntity.dll
+F:\UDS\UDS Studio_20180808\UDSEntity\obj\Debug\UDSEntity.pdb
+F:\UDS\UDS Studio_20180808\UDSEntity\bin\Debug\NLog.dll
+E:\UDS\UDS Studio_20180808\UDSEntity\bin\Debug\UDSEntity.dll
+E:\UDS\UDS Studio_20180808\UDSEntity\bin\Debug\UDSEntity.pdb
+E:\UDS\UDS Studio_20180808\UDSEntity\bin\Debug\NLog.dll
+E:\UDS\UDS Studio_20180808\UDSEntity\obj\Debug\UDSEntity.dll
+E:\UDS\UDS Studio_20180808\UDSEntity\obj\Debug\UDSEntity.pdb
+E:\UDS\UDS Studio_20180808\UDSEntity\obj\Debug\UDSEntity.csprojResolveAssemblyReference.cache

@@ -1,0 +1,327 @@
+﻿<UserControl x:Class="BoqiangH5.UserCtrlAdjust"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type CheckBox}" x:Key="AdjustCheckBoxStyle">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Margin" Value="2,12,2,2"/>
+        </Style>
+
+        <Style TargetType="{x:Type DataGridRow}">
+            <Setter Property="Height" Value="28" />
+            <Style.Triggers>
+                <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                    <Setter Property="Background" Value="#FFF5F5DC" />
+                </Trigger>
+                <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                    <Setter Property="Background" Value="#FFF2F2F2" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="400*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="460*"/>
+                <RowDefinition Height="60*"/>
+            </Grid.RowDefinitions>
+            <GroupBox Header="单体电压校准" Margin="2">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="360*"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid >
+                        <DataGrid Name="dgAdjustVoltage2"  CanUserAddRows="False" CanUserSortColumns="False" AutoGenerateColumns="False" FontSize="14" Margin="2,10"  Grid.Column="1" RowHeaderWidth="0" ScrollViewer.CanContentScroll="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="{DynamicResource dxgacName}" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Description}" Width="100*"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                                <DataGridTextColumn Header="{DynamicResource dxgacValue}" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=StrValue}" Width="80*" IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                                <DataGridTextColumn Header="{DynamicResource dxgacunit}" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Unit}" Width="60*"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="90*"/>
+                            <ColumnDefinition Width="80*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="100*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="校准值：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                        <Button Name="btnAdjustCellVol" Content="校  准"  Grid.Column="3" Style="{StaticResource ButtonStyle}" />
+                    </Grid>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="总压校准"  Margin="2" Grid.Row="1">
+                <Grid  Margin="0" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="56*"/>
+                        <ColumnDefinition Width="55*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="62*"/>
+                        <ColumnDefinition Width="37*"/>
+                        <ColumnDefinition Width="123"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="总压：" Style="{StaticResource LabelStyle}"/>
+                    <TextBox Name="tbTotalVoltage" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True"/>
+                    <Label  Grid.Column="2"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                    <Label  Grid.Column="4"  Content="mV" Style="{StaticResource LabUnitStyle}"/>
+                    <Button  Name="btnAdjustTotalVol" Content="校  准"  Grid.Column="5" Style="{StaticResource ButtonStyle}"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100*"/>
+                <RowDefinition Height="400*"/>
+                <RowDefinition Height="60*"/>
+            </Grid.RowDefinitions>
+            <GroupBox Header="电流校准"  Margin="2" Grid.Row="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35*"/>
+                        <RowDefinition Height="35*"/>
+                    </Grid.RowDefinitions>
+                    <Grid  Margin="0" Grid.Row="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="实时电流：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbCurrent" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="mA" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Name="tbRtCurrent" Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="mA" Style="{StaticResource LabUnitStyle}"/>
+                        <Button  Name="btnAdRtCurrent" Content="校  准"  Style="{StaticResource ButtonStyle}" Width="85" Click="btnAdjustCurrent_Click" Grid.Column="5" />
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="1" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <!--<Label Content="零点电流：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>-->
+                        <!--<Label  Grid.Column="2"  Content="mA" Style="{StaticResource LabUnitStyle}"/>-->
+                        <TextBox Name="tbZeroCurrent"  Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="mA" Style="{StaticResource LabUnitStyle}"/>
+                        <Button  Name="btnAdZeroCurrent" Content="零点电流校准"  Style="{StaticResource ButtonStyle}"  Width="80" Click="btnAdjustCurrent_Click" Grid.Column="5" />
+                    </Grid>
+
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="温度校准"  Margin="2" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                        <RowDefinition Height="30*"/>
+                    </Grid.RowDefinitions>
+                    <Grid  Margin="0" Grid.Row="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="功率温度：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbAmbientTemp" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="1" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="环境温度：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbTemp1" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="2" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="电芯温度2：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbTemp2" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="3" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="电芯温度3：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbTemp3" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="4" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="电芯温度4：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbTemp4" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="5" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="电芯温度5：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbTemp5" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="6" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="电芯温度6：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbTemp6" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="7" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="电芯温度7：" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbTemp7" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="℃" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="8" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="湿度" Style="{StaticResource LabelStyle}"/>
+                        <TextBox Name="tbPowerTemp" Grid.Column="1" Text="0"  Style="{StaticResource TextBoxStyle}" IsReadOnly="True" Background="LightGray"/>
+                        <Label  Grid.Column="2"  Content="%" Style="{StaticResource LabUnitStyle}"/>
+                        <TextBox Grid.Column="3" Text="0"  Style="{StaticResource TextBoxStyle}"/>
+                        <Label  Grid.Column="4"  Content="%" Style="{StaticResource LabUnitStyle}"/>
+                        <CheckBox   Grid.Column="5" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                    <Grid  Margin="0" Grid.Row="9" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="140*"/>
+                            <ColumnDefinition Width="80*"/>
+                            <ColumnDefinition Width="40*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Name="btnAdjustTemp"  Content="校  准"  Style="{StaticResource ButtonStyle}" />
+                        <Label  Grid.Column="1"  Content="全选" Style="{StaticResource LabUnitStyle}" HorizontalAlignment="Right"/>
+                        <CheckBox   Grid.Column="2" Style="{StaticResource AdjustCheckBoxStyle}"/>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="RTC校准"  Margin="2" Grid.Row="2">
+                <Grid  Margin="0" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="118*"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="118*"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="70"/>
+                    </Grid.ColumnDefinitions>
+                    <Label  Grid.Column="0"  Content="RTC时间：" Style="{StaticResource LabUnitStyle}" HorizontalAlignment="Right"/>
+                    <TextBox Name="tbRtc" Grid.Column="1" Margin="0 0 5 0" Style="{StaticResource TextBoxStyle}" IsEnabled="False"/>
+                    <Label  Grid.Column="2"  Content="校准时间：" Style="{StaticResource LabUnitStyle}" HorizontalAlignment="Right"/>
+                    <TextBox Name="tbCurrentTime" Grid.Column="3" Margin="5 0 0 0" Style="{StaticResource TextBoxStyle}" IsEnabled="False"/>
+                    <Label  Grid.Column="4"  Content="实时刷新" Style="{StaticResource LabUnitStyle}" HorizontalAlignment="Right"/>
+                    <CheckBox Name="cbIsRefresh"  Grid.Column="5"   Style="{StaticResource AdjustCheckBoxStyle}"/>
+
+                    <Button Name="btnAdjustRTC" Content="校  准" Width="60"  Grid.Column="6" Style="{StaticResource ButtonStyle}" Click="btnAdjustRTC_Click"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</UserControl>

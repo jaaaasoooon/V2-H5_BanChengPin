@@ -1,0 +1,268 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="biFile">文件</sys:String>
+    <sys:String x:Key="biSelectDevice">设置</sys:String>
+    <!--<sys:String x:Key="biClose">关闭</sys:String>
+    <sys:String x:Key="biSetting">设置</sys:String>
+    <sys:String x:Key="biLanguage">语言</sys:String>
+    <sys:String x:Key="biSendFrames">发送帧数</sys:String>
+    <sys:String x:Key="biReceive">接收帧数</sys:String>
+    <sys:String x:Key="biConn">当前连接数</sys:String>
+    <sys:String x:Key="biSkin">皮肤</sys:String>-->
+
+    <!--===================CAN设置窗体================-->
+    <sys:String x:Key="coStart">启动</sys:String>
+    <sys:String x:Key="coPause">暂停</sys:String>
+    <sys:String x:Key="coStop">停止</sys:String>
+    <sys:String x:Key="coClear">清空</sys:String>
+    <sys:String x:Key="coSave">保存</sys:String>
+    <sys:String x:Key="coOperation">基本操作</sys:String>
+    <sys:String x:Key="coFrame">帧ID(HEX)</sys:String>
+    <sys:String x:Key="coTimes">发送次数</sys:String>
+    <sys:String x:Key="coSendData">数据(HEX)</sys:String>
+    <sys:String x:Key="coInterval">发送间隔(ms)</sys:String>
+    <sys:String x:Key="coSend">发送</sys:String>
+    <sys:String x:Key="coDirection">方向</sys:String>
+    <sys:String x:Key="coTime">时间</sys:String>
+
+
+    <sys:String x:Key="scDevice">设备</sys:String>
+    <sys:String x:Key="scDevicePara">设备参数</sys:String>
+    <sys:String x:Key="scInitialPara">初始化参数</sys:String>
+    <sys:String x:Key="scType">类型：</sys:String>
+    <sys:String x:Key="scDevIndex">索引：</sys:String>
+    <sys:String x:Key="scDevChannel">通道：</sys:String>
+    <sys:String x:Key="scTimer0">定时器0：0x</sys:String>
+    <sys:String x:Key="scTimer1">定时器1：0x</sys:String>
+    <sys:String x:Key="scBaudrate">波特率：</sys:String>
+    <sys:String x:Key="scPattern">工作模式：</sys:String>
+    <sys:String x:Key="scCheckCode">验收码：0x</sys:String>
+    <sys:String x:Key="scShieldCode">屏蔽码：0x</sys:String>
+    <sys:String x:Key="scSelect">请选择</sys:String>
+    <sys:String x:Key="scOK">确定</sys:String>
+    <sys:String x:Key="scCanel">取消</sys:String>
+    <sys:String x:Key="scCANFDStandary">CANFD标准：</sys:String>
+    <sys:String x:Key="scArbitrationBaudRate">仲裁域波特率：</sys:String>
+    <sys:String x:Key="scDataBaudRate">数据域波特率：</sys:String>
+    <sys:String x:Key="scIsTerminalResistance">终端电阻使能：</sys:String>
+    <sys:String x:Key="scSystemSetting">系统设置：</sys:String>
+    <sys:String x:Key="scProtocol">协议:</sys:String>
+    <sys:String x:Key="scRecordInterval">数据记录间隔时间:</sys:String>
+    <sys:String x:Key="scHandShakeInterval">握手连接间隔时间:</sys:String>
+    <sys:String x:Key="scWakeInterval">浅休眠唤醒间隔时间:</sys:String>
+    <sys:String x:Key="scVoltageBase">电压基数(mV):</sys:String>
+    <sys:String x:Key="scVoltageError">电压误差(mV):</sys:String>
+    <sys:String x:Key="scTemperatureBase">温度基数(℃):</sys:String>
+    <sys:String x:Key="scTemperatureError">温度误差(℃):</sys:String>
+    <sys:String x:Key="scHardwareVersion">硬件版本号:</sys:String>
+    <sys:String x:Key="scSoftwareVersion">软件版本号:</sys:String>
+
+
+    <sys:String x:Key="teNormal">正常</sys:String>
+    <sys:String x:Key="teListenonly">只听</sys:String>
+    <sys:String x:Key="tePrompt">提示</sys:String>
+    <sys:String x:Key="tePromptText1">此类型CAN盒没有多余的设备或者通道可以打开！</sys:String>
+    <sys:String x:Key="tePromptText2">打开CAN盒失败！</sys:String>
+    <sys:String x:Key="tePromptText3">发送失败！</sys:String>
+    <sys:String x:Key="teReceive">接收</sys:String>
+    <sys:String x:Key="teStandardFrame">标准帧</sys:String>
+    <sys:String x:Key="teExtendedFrame">扩展帧</sys:String>
+
+    <!--===================main窗体================-->
+    <!--工具条-->
+    <sys:String x:Key="tbLoadProtocol">加载协议</sys:String>
+    <sys:String x:Key="tbLoadParam">加载参数</sys:String>
+    <sys:String x:Key="tbLoadAdjustOffset">加载校准偏移</sys:String>
+    <sys:String x:Key="tbUpLoadParam">参数管理</sys:String>
+    <sys:String x:Key="tbUpLoadAdjustOffset">上传校准偏移值</sys:String>
+    <sys:String x:Key="tbCommunicationRecords">通讯记录</sys:String>
+    <sys:String x:Key="tbRealtimeRecords">实时记录</sys:String>
+    <sys:String x:Key="tbHistoryRecords">DTC信息</sys:String>
+    <sys:String x:Key="tbAdjustAndControl">校准和控制</sys:String>
+    <sys:String x:Key="tbDebug">调试</sys:String>
+    <sys:String x:Key="tbVerInfo">版本信息</sys:String>
+    <sys:String x:Key="tbAidInfo">辅助信息</sys:String>
+    <sys:String x:Key="tbPackInfo">Pack信息</sys:String>
+    <sys:String x:Key="tbSetting">设置</sys:String>
+    <sys:String x:Key="tbLanguage">语言</sys:String>
+    <sys:String x:Key="tbChinese">中文</sys:String>
+    <sys:String x:Key="tbEnglish">英文</sys:String>
+    <sys:String x:Key="tbUnlock">解锁</sys:String>
+
+    <!--主面板-->
+    <sys:String x:Key="gcBatVolt">总电压(V)</sys:String>
+    <sys:String x:Key="gcBatCur">电流(A)</sys:String>
+    <sys:String x:Key="cbpMaxCellVolt">最大:</sys:String>
+    <sys:String x:Key="cbpMinCellVolt">最小:</sys:String>
+    <sys:String x:Key="cbpAvgCellVolt">平均:</sys:String>
+    <sys:String x:Key="glMaxTmpr">最高:</sys:String>
+    <sys:String x:Key="chVolt">电压</sys:String>
+    <sys:String x:Key="chCur">电流</sys:String>
+    <sys:String x:Key="ttSoc">剩余容量</sys:String>
+    <sys:String x:Key="ttSoh">电池健康状态</sys:String>
+    <sys:String x:Key="teMode">模式</sys:String>
+    <sys:String x:Key="teInsulatio">绝缘阻值</sys:String>
+    <sys:String x:Key="teBatType">电池类型:</sys:String>
+    <sys:String x:Key="teManufacturers">厂商:</sys:String>
+    <sys:String x:Key="teSoftVer">软件版本:</sys:String>
+    <sys:String x:Key="teHardVer">硬件版本:</sys:String>
+    <sys:String x:Key="teBatCells">串数:</sys:String>
+    <sys:String x:Key="gbPackStatus">Pack状态</sys:String>
+    <sys:String x:Key="brOSI">绝缘</sys:String>
+    <sys:String x:Key="brMode">模式</sys:String>
+    <sys:String x:Key="undefinedMode">未定义</sys:String>
+    <sys:String x:Key="dxglRelayStatus">继电器状态</sys:String>
+    <sys:String x:Key="dxglInputSignals">输入信号</sys:String>
+    <sys:String x:Key="dxglOutputSignals">输出信号</sys:String>
+    <sys:String x:Key="dxglWarnAndProtect">告警和保护</sys:String>
+    <sys:String x:Key="upLoadPromt">上传</sys:String>
+    <sys:String x:Key="successPromt">成功</sys:String>
+    <sys:String x:Key="sessionChangePromt">会话切换成功</sys:String>
+    <sys:String x:Key="unLockSucessPromt">解锁成功</sys:String>
+    <sys:String x:Key="requestSeedPromt">请求种子成功</sys:String>
+    <sys:String x:Key="clearDTCPromt">DTC信息已清楚</sys:String>
+    <sys:String x:Key="NoMatchRecordPromt">无匹配记录</sys:String>
+    <sys:String x:Key="errorUploadCompletedPromt">上传完成</sys:String>
+    <!--<sys:String x:Key="digitVarBatVolt">Voltage</sys:String>
+    <sys:String x:Key="digitVarBatCur">Current</sys:String>
+    <sys:String x:Key="digitVarMaxCellVolt">Highest</sys:String>
+    <sys:String x:Key="digitVarMinCellVolt">Lowest</sys:String>
+    <sys:String x:Key="digitVarAvgCellVolt">Average</sys:String>-->
+
+    <!--状态栏-->
+    <sys:String x:Key="txblOnline">在线</sys:String>
+    <sys:String x:Key="txblOffline">断开</sys:String>
+    <sys:String x:Key="eclpColorMaskProtect">颜色 标识--保护</sys:String>
+    <sys:String x:Key="eclpColorMaskWarn">颜色 标识--告警</sys:String>
+    <sys:String x:Key="eclpColorMaskNormal">颜色 标识--正常</sys:String>
+    <sys:String x:Key="txblProtection">保护</sys:String>
+    <sys:String x:Key="txblWarn">告警</sys:String>
+    <sys:String x:Key="txblNormal">正常</sys:String>
+    <sys:String x:Key="txblRecordCnt">实时记录:</sys:String>
+
+    <!--=======================================-->
+
+    <!--===================Pack窗体================-->
+
+    <sys:String x:Key="bsiCurrentPack">当前pack:</sys:String>
+    <sys:String x:Key="gpbHighestVolt">最高单体电压:</sys:String>
+    <sys:String x:Key="gpbLowestVolt">最低单体电压:</sys:String>
+    <sys:String x:Key="gpbAverageVolt">平均电压:</sys:String>
+    <sys:String x:Key="gpbHighestTmpr">最高温度:</sys:String>
+    <sys:String x:Key="gpbLowestTmpr">最低温度:</sys:String>
+    <sys:String x:Key="txblPackAddr">地址:</sys:String>
+    <sys:String x:Key="txblPackSoftVer">软件版本:</sys:String>
+    <sys:String x:Key="txblPackHardVer">硬件版本:</sys:String>
+    <sys:String x:Key="txblVoltagedifference">压差:</sys:String>
+    <sys:String x:Key="txblTemperaturedifference">温差:</sys:String>
+    <sys:String x:Key="txblBalanceMask">均衡标识:</sys:String>
+    <sys:String x:Key="txblAFEMask">AFE标识:</sys:String>
+    <sys:String x:Key="promtUpLoad">上传</sys:String>
+    <sys:String x:Key="promtParameter">参数</sys:String>
+    <sys:String x:Key="promtAdjust">校准</sys:String>
+    <sys:String x:Key="promtUpLoadParam">上传参数</sys:String>
+    <sys:String x:Key="promtUpLoadAdjust">上传校准值</sys:String>
+    <sys:String x:Key="promtAdjustAction">校准</sys:String>
+    <sys:String x:Key="promtUpLoadAdjustOffset">上传校准偏移值</sys:String>
+
+    <!--===================参数窗体================-->
+
+    <sys:String x:Key="tbicOpenParaFile">打开参数文件</sys:String>
+    <sys:String x:Key="tbicSaveAsParaFile">另存为</sys:String>
+    <sys:String x:Key="tbicParaClose">关闭</sys:String>
+    <sys:String x:Key="tbicParaSetAll">设置所有</sys:String>
+    <sys:String x:Key="tbicParaSave">设置保存</sys:String>
+    <sys:String x:Key="tbicParaReset">恢复出厂</sys:String>
+    <sys:String x:Key="grpbhNumericalparameter">数值参数</sys:String>
+    <sys:String x:Key="grpbhFunctionswitch">功能开关</sys:String>
+    <sys:String x:Key="grpbhOtherparameters">其它参数</sys:String>
+    <sys:String x:Key="dxgacIndex">序号</sys:String>
+    <sys:String x:Key="dxgacName">名称</sys:String>
+    <sys:String x:Key="dxgacValue">数值</sys:String>
+    <sys:String x:Key="dxgacunit">单位</sys:String>
+    <sys:String x:Key="dxgacbalance">均衡</sys:String>
+    <sys:String x:Key="dxgacoperate">操作</sys:String>
+    <sys:String x:Key="btndownload">下载</sys:String>
+    <sys:String x:Key="promtSetAllPara">Set all parameters</sys:String>
+    <sys:String x:Key="promtSavePara">Save parameters</sys:String>
+    <sys:String x:Key="promtResetPara">Reset parameters</sys:String>
+
+    <!--===================校准窗体================-->
+
+    <sys:String x:Key="tbicOpenAdjustFile">打开校准文件</sys:String>
+    <sys:String x:Key="tbicSaveAsAdjustFile">另存为</sys:String>
+    <sys:String x:Key="tbicAdjustClose">关闭</sys:String>
+    <sys:String x:Key="tbicAdjustSetAll">设置所有</sys:String>
+    <sys:String x:Key="tbicAdjustSave">设置保存</sys:String>
+    <sys:String x:Key="tbicAdjustReset">恢复出厂</sys:String>
+    <sys:String x:Key="grpbhNumericaladjust">数值校准</sys:String>
+    <sys:String x:Key="grpbhBmsClock">保护板时钟</sys:String>
+    <sys:String x:Key="grpbhFunctionctrl">功能控制</sys:String>
+    <sys:String x:Key="grpbhVersionInfo">版本信息</sys:String>
+    <sys:String x:Key="btncReadTime">读时间</sys:String>
+    <sys:String x:Key="btncSetTime">设置时间</sys:String>
+    <sys:String x:Key="readTimePromtInfo">读BMS时间</sys:String>
+    <sys:String x:Key="setTimePromtInfo">设置BMS时间</sys:String>
+    
+
+    <!--===================调试窗体================-->
+    <sys:String x:Key="grpbhRelayCtrl">继电气控制</sys:String>
+    <!--<sys:String x:Key="grpbhMasterDebug">Master debugging information</sys:String>
+    <sys:String x:Key="grpbhPackDebug">Pack debugging information</sys:String>-->
+
+    <!--===================实时记录窗体================-->
+    <sys:String x:Key="tbicRealTimeRecordStart">开始</sys:String>
+    <sys:String x:Key="tbicRealTimeRecordStop">停止</sys:String>
+    <sys:String x:Key="tbicRealTimeRecordSave">保存</sys:String>
+    <sys:String x:Key="tbicRealTimeRecordClear">清除</sys:String>
+    <sys:String x:Key="tbicRealTimeRecordClose">关闭</sys:String>
+    <sys:String x:Key="dateRealPromt">日期</sys:String>
+    <sys:String x:Key="timeRealPromt">时间</sys:String>
+    <sys:String x:Key="modeRealPromt">模式</sys:String>
+    <sys:String x:Key="auxInputSignalPromt">输入输出信号</sys:String>
+    <sys:String x:Key="relayStatusPromt">继电器状态</sys:String>
+    <sys:String x:Key="warnRealPromt">告警</sys:String>
+
+
+    <!--==================DTC窗体====================-->
+    <sys:String x:Key="datePromt">日期</sys:String>
+    <sys:String x:Key="timePromt">时间</sys:String>
+    <sys:String x:Key="warnPromt">告警</sys:String>
+    <sys:String x:Key="clearDTC">清除DTC</sys:String>
+    <sys:String x:Key="readDTC">读DTC</sys:String>
+
+    <!--==================会话管理窗体====================-->
+    <sys:String x:Key="promtSessionSelect">会话选择 $10</sys:String>
+    <sys:String x:Key="promtUnlockOperation">解锁操作   $27</sys:String>
+    <sys:String x:Key="promtChangeto">切换</sys:String>
+    <sys:String x:Key="promtSessionType">会话类型:</sys:String>
+    <sys:String x:Key="promtSessionChange">会话切换</sys:String>
+    <sys:String x:Key="promtRequestSeed">请求种子</sys:String>
+    <sys:String x:Key="promtSendKey">发送key</sys:String>
+
+
+    <!--===================提示信息================-->
+    <sys:String x:Key="promptNonProtocol">非协议文件</sys:String>
+    <sys:String x:Key="promptNonParameter">非参数文件</sys:String>
+    <sys:String x:Key="promptNonAdjust">非校准文件</sys:String>
+    <sys:String x:Key="promtNoFidProtocol">未发现协议文件，请导入协议文件</sys:String>
+    <sys:String x:Key="promtError">错误</sys:String>
+    <sys:String x:Key="loadProtocolFile">加载协议文件失败，请确认后重新加载。</sys:String>
+    <sys:String x:Key="protocolDefinitionFile">协议定义文件</sys:String>
+    <sys:String x:Key="promtAllFile">所有文件</sys:String>
+    <sys:String x:Key="promtProtocolLoading">加载协议</sys:String>
+    <sys:String x:Key="promtParaFile">参数文件</sys:String>
+    <sys:String x:Key="promtOpenParaFileSuccess">打开参数文件成功.</sys:String>
+    <sys:String x:Key="promtOpenParaFileFailed">打开参数文件失败.</sys:String>
+    <sys:String x:Key="promtAllParaUploading">上传所有参数</sys:String>
+    <sys:String x:Key="promtAllAdjustUploading">上传所有校准值.</sys:String>
+    <sys:String x:Key="promtPleaseWait">请等待</sys:String>
+    <sys:String x:Key="promtLoading">加载中...</sys:String>
+    <sys:String x:Key="promtLoadingBasicSettings">加载基本设定...</sys:String>
+    <sys:String x:Key="promtLoaddingmeterSettings">加载仪表设置...</sys:String>
+    <sys:String x:Key="promtLadingMasterSettings">加载主控配置...</sys:String>
+    <sys:String x:Key="promtLoadingPackSettings">加载pack配置...</sys:String>
+    <sys:String x:Key="promtInitializationTable">表格初始化...</sys:String>
+    <sys:String x:Key="promtProtocolLoadingSucess">协议加载成功</sys:String>
+</ResourceDictionary>

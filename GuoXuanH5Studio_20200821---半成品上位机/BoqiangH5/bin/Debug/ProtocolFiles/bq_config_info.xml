@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <config>
+    <device_type>9</device_type>
+    <device_index>0</device_index>
+    <device_channel>0</device_channel>
+    <baudrate>11</baudrate>
+    <protocol>0</protocol>
+    <canfd_index>0</canfd_index>
+    <arbitration_index>2</arbitration_index>
+    <databaudrate_index>0</databaudrate_index>
+    <terminalresistance>0</terminalresistance>
+    <handshakeinterval>1</handshakeinterval>
+    <datarecord_index>0</datarecord_index>
+    <wakeinterval>10</wakeinterval>
+    <isclosepwd>1</isclosepwd>
+    <isdebugmode>1</isdebugmode>
+    <voltagebase>3300</voltagebase>
+    <voltageerror>20</voltageerror>
+    <temperaturebase>29</temperaturebase>
+    <temperatureerror>6</temperatureerror>
+    <hardwareversion>HWBAT-GX-A8-V100</hardwareversion>
+    <softwareversion>FWBAT-GX-A8-V019</softwareversion>
+  </config>
+</root>

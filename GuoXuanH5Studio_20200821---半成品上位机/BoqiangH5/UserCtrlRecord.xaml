@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="BoqiangH5.UserCtrlRecord"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900" Loaded="ucRecordInfo_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="dataGridRecord" HorizontalAlignment="Stretch"  FontSize="14" Margin="5,10" ColumnWidth="auto" AutoGenerateColumns="False"
+                  RowHeaderWidth="0" ScrollViewer.CanContentScroll="False" >
+            <ColumnDefinition Width="1000"></ColumnDefinition>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Header="{DynamicResource dxgacIndex}" HeaderStyle="{StaticResource DataGridHeaderStyle}" Width="50"  IsReadOnly="True" >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <Label Content="{Binding Path=Index}" HorizontalAlignment="Center" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="时间" Width="150" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=RecordTime}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"></DataGridTextColumn>
+                <DataGridTextColumn Header="记录类型" Width="120" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=RecordType}" IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Pack状态" Width="120" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=PackStatus}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="电池状态" Width="120" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=BatteryStatus}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="满充容量(mAh)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=FCC}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="剩余容量(mAh)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=RC}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="SOC(%)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=SOC}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell1(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell1Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                <DataGridTextColumn Header="Cell2(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell2Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell3(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell3Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell4(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell4Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell5(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell5Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell6(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell6Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell7(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell7Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell8(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell8Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell9(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell9Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                <DataGridTextColumn Header="Cell10(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell10Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell11(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell11Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell12(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell12Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell13(mV)" Width="80"  HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell13Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                <DataGridTextColumn Header="Cell14(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell14Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell15(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell15Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="Cell16(mV)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell16Voltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="总压(V)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=TotalVoltage}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="电流(mA)" Width="80" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Current}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="环境温度(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=AmbientTemp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="保留温度1(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell1Temp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="保留温度2(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell2Temp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                
+                <DataGridTextColumn Header="电芯温度1(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell3Temp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                
+                <DataGridTextColumn Header="电芯温度2(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell4Temp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                
+                <DataGridTextColumn Header="电芯温度3(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell5Temp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                
+                <DataGridTextColumn Header="电芯温度4(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell6Temp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+
+                <DataGridTextColumn Header="湿度(%)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=Cell7Temp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+                
+                <DataGridTextColumn Header="功率温度(℃)" Width="110" HeaderStyle="{StaticResource DataGridHeaderStyle}" Binding="{Binding Path=PowerTemp}"  IsReadOnly="true" ElementStyle="{StaticResource DataGridTextColumnCenterStyle}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Content="读取全部"  Grid.Column="1" Style="{StaticResource ButtonStyle}" Name="btnReadData" Width="80" Click="btnReadData_Click"/>
+            <Button Content="停止读取"  Grid.Column="2" Style="{StaticResource ButtonStyle}" Name="btnStopRead" Width="80" Click="btnStopRead_Click"/>
+            <Button Content="擦除"  Grid.Column="3" Style="{StaticResource ButtonStyle}" Name="btnClear" Width="80" Click="btnClear_Click"/>
+            <Button Content="保存"  Grid.Column="4" Style="{StaticResource ButtonStyle}" Name="btnSave" Width="80"  Click="btnSave_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

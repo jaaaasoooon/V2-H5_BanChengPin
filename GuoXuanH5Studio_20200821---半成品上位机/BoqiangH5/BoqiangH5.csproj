@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{60B92753-E4C6-42FC-9D38-FDFBF9CAC7B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoqiangH5</RootNamespace>
+    <AssemblyName>BoqiangH5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>boqiang64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BackgrounderWoker.cs" />
+    <Compile Include="BQProtocol\BqReadRecordInfo.cs" />
+    <Compile Include="BQProtocol\BqUpdateBmsInfo.cs" />
+    <Compile Include="BQProtocol\BqUpdateEepromInfo.cs" />
+    <Compile Include="BQProtocol\BqUpdateMcuInfo.cs" />
+    <Compile Include="BQProtocol\BqUpdateProtectParam.cs" />
+    <Compile Include="ControlWnd.xaml.cs">
+      <DependentUpon>ControlWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DDProtocol\DdRecord.cs" />
+    <Compile Include="EventArgs.cs" />
+    <Compile Include="H5RecvDataEvent.cs" />
+    <Compile Include="BQProtocol\BqProtocol.cs" />
+    <Compile Include="CommonClass\CRC_Check.cs" />
+    <Compile Include="CommonClass\DataFormatConvert.cs" />
+    <Compile Include="CommonClass\UpdateUIDataFormat.cs" />
+    <Compile Include="DDProtocol\DdProtocol.cs" />
+    <Compile Include="ISO15765\NetworkLayerCommunication.cs" />
+    <Compile Include="ISO15765\NetworkLayerDataBuffer.cs" />
+    <Compile Include="LoadingWnd.xaml.cs">
+      <DependentUpon>LoadingWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordWnd.xaml.cs">
+      <DependentUpon>PasswordWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PCAN\PCANBasic.cs" />
+    <Compile Include="PCAN\PCANInterface.cs" />
+    <Compile Include="RequestFrameTestWnd.xaml.cs">
+      <DependentUpon>RequestFrameTestWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\StudioCommands.cs" />
+    <Compile Include="Converts.cs" />
+    <Compile Include="ISO14229\ServicesInterface.cs" />
+    <Compile Include="ISO15765\ApplicationLayer.cs" />
+    <Compile Include="ISO15765\ApplicationLayerProtocol.cs" />
+    <Compile Include="ISO15765\DataLinkLayer.cs" />
+    <Compile Include="ISO15765\NetworkLayer.cs" />
+    <Compile Include="ISO15765\NetworkLayerProtocol.cs" />
+    <Compile Include="ISO15765\NetworkLayerServicesInfo.cs" />
+    <Compile Include="ScanSnWnd.xaml.cs">
+      <DependentUpon>ScanSnWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectCANWnd.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>SelectCANWnd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatusConverter.cs" />
+    <Compile Include="DDProtocol\DdUpdateBmsInfo.cs" />
+    <Compile Include="UcBattery.xaml.cs">
+      <DependentUpon>UcBattery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UcButton.xaml.cs">
+      <DependentUpon>UcButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UcMenu.xaml.cs">
+      <DependentUpon>UcMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlAdjust.xaml.cs">
+      <DependentUpon>UserCtrlAdjust.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlAFE.xaml.cs">
+      <DependentUpon>UserCtrlAFE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlBoot.xaml.cs">
+      <DependentUpon>UserCtrlBoot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlBqBmsInfo.xaml.cs">
+      <DependentUpon>UserCtrlBqBmsInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlDdBmsInfo.xaml.cs">
+      <DependentUpon>UserCtrlDdBmsInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlDebug.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>UserCtrlDebug.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlDidiRecord.cs" />
+    <Compile Include="UserCtrlEEPROM.xaml.cs">
+      <DependentUpon>UserCtrlEEPROM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlMCU.xaml.cs">
+      <DependentUpon>UserCtrlMCU.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlProtectParam.xaml.cs">
+      <DependentUpon>UserCtrlProtectParam.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrlRecord.xaml.cs">
+      <DependentUpon>UserCtrlRecord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ZLGCAN\ZLGCANFuction.cs" />
+    <Compile Include="ZLGCAN\ZLGCAN_API.cs" />
+    <Compile Include="ZLGCAN\ZLGFuction.cs" />
+    <Compile Include="ZLGCAN\ZLG_API.cs" />
+    <Page Include="ControlResource\ComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ControlWnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Languages\StringResource.en-US.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Languages\StringResource.zh-CN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LoadingWnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PasswordWnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RequestFrameTestWnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ScanSnWnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectCANWnd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\Style.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UcBattery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UcButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UcMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlAdjust.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlAFE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlBoot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlBqBmsInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlDdBmsInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlDebug.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserCtrlDidiRecord.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserCtrlEEPROM.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlMCU.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlProtectParam.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrlRecord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\car_electricity64X64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-up-50x50 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-stop-18x18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\car_128X128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\car2_128X128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\car1_128X128.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-down-50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-setting-50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-start-50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-adjust-50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-debug-50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-unlock-50x50 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-msg-36x40 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon-log-50x50 .png" />
+    <Resource Include="Images\icon-msg-20x22 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BoqiangH5Entity\BoqiangH5Entity.csproj">
+      <Project>{310720be-407e-4b6e-8f2b-4d2413b6b47e}</Project>
+      <Name>BoqiangH5Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BoqiangH5Repository\BoqiangH5Repository.csproj">
+      <Project>{74b9f7e7-af95-40dd-bcd1-7038e8733ff7}</Project>
+      <Name>BoqiangH5Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\balance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\boqiang.JPG" />
+    <Resource Include="Images\boqiang64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="boqiang64.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\main-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\start_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\start_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\stop_gray.png" />
+    <Resource Include="Images\stop_red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\adjust.ico" />
+    <Resource Include="Images\Back_Up.ico" />
+    <Resource Include="Images\EEPROM.ico" />
+    <Resource Include="Images\info.ico" />
+    <Resource Include="Images\MCU.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\debug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ProtectParam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ProtectParam_50x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\afeParam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Test.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Repository\bin\Debug\UDSRepository.dll
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Repository\bin\Debug\UDSRepository.pdb
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Repository\bin\Debug\UDSEntity.dll
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Repository\bin\Debug\UDSEntity.pdb
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Repository\obj\Debug\GuoXuanH5Repository.csprojResolveAssemblyReference.cache
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Repository\obj\Debug\UDSRepository.dll
+E:\国轩12S\H5\GuoXuanH5Studio_20191105\GuoXuanH5Repository\obj\Debug\UDSRepository.pdb

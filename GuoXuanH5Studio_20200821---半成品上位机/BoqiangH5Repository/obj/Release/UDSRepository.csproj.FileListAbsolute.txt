@@ -1,0 +1,5 @@
+E:\UDS\UDS Studio_20180808\UDSRepository\bin\Release\UDSRepository.dll
+E:\UDS\UDS Studio_20180808\UDSRepository\bin\Release\UDSRepository.pdb
+E:\UDS\UDS Studio_20180808\UDSRepository\obj\Release\UDSRepository.dll
+E:\UDS\UDS Studio_20180808\UDSRepository\obj\Release\UDSRepository.pdb
+E:\UDS\UDS Studio_20180808\UDSRepository\obj\Release\UDSRepository.csprojResolveAssemblyReference.cache
